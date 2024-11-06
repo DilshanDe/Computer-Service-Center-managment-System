@@ -1,0 +1,7 @@
+.card1 {
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card1:hover {
+  background-color: #254c4d;
+}

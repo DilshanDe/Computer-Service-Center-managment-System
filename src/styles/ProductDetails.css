@@ -1,0 +1,16 @@
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.product-image {
+  width: 300px;
+  height: auto;
+  transition: transform 1s ease-in-out;
+}
+
+.fly-to-cart {
+  transform: scale(0) translateY(-100px);
+}

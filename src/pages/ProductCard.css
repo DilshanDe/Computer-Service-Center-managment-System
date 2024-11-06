@@ -1,0 +1,125 @@
+.product-card {
+  position: relative;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+  margin: 15px;
+  width: 220px;
+  max-width: 240px; /* Adjust max-width in media queries for responsiveness */
+  height: auto; /* Change to auto for better resizing */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Use flex to better manage internal spacing */
+  padding: 15px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 150px;
+}
+
+.card-image{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the start of the container */
+  align-items: flex-start; /* Align items to the start (left side) of the container */
+  flex-grow: 1; /* Allow the body to expand and fill the space */
+}
+
+.card-title {
+  align-self: flex-start; /* Align title to the start (left) of the flex container */
+  margin: 0 0 10px 0; /* Reduce the top margin to bring the title higher */
+  padding: 0; /* Adjust padding as needed */
+  text-align: center; /* Text alignment to the left */
+  width: 100%; /* Full width to respect left alignment */
+  font-weight: bold; /* Make text bold */
+}
+
+.card-text {
+  margin: 0;  object-fit: cover; /* Ensure the image covers the area properly */
+  text-align: center;
+  padding: 5px 0;
+  text-align: center; /* Ensure text is centered */
+  width: 100%; /* Full width to center text properly */
+}
+
+.Price-text {
+  text-align: left;
+  font-size: 14px; /* Adjust font size for readability */
+}
+
+.price-cart{
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.cart-icon-container {
+  cursor: pointer;
+}
+
+.cart-icon-container:hover .cart-icon {
+  color: #007bff;
+}
+
+.cart-icon {
+  color: #000;
+  transition: color 0.2s ease-in-out, transform 0.3s ease;
+}
+
+/* Media Queries */
+@media (min-width: 1024px) {
+  .product-card {
+    max-width: 240px; /* Reduced max-width for desktops */
+    height: 300px; /* Increased height */
+  }
+}
+
+@media (min-width: 1071px) and (max-width: 1023px) {
+  .product-card {
+    max-width: 160px; /* Reduced max-width for tablets */
+    height: 300px; /* Increased height */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1071px) {
+  .product-card {
+    max-width: 160px; /* Reduced max-width for tablets */
+    height: 300px; /* Increased height */
+  }
+}
+
+@media (min-width: 455px) and (max-width: 767px) {
+  .product-card {
+    max-width: 180px; /* Unchanged for larger mobile devices */
+    height: 280px; /* Adjusted height for consistency */
+  }
+}
+
+@media (min-width: 261px) and (max-width: 454px) {
+  .product-card {
+    max-width: 100%; /* 100% width to show one card per row */
+    margin: 15px auto; /* Center card in the middle */
+    height: 260px; /* Adjusted height for smaller screens */
+  }
+}

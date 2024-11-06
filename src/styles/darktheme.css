@@ -1,0 +1,45 @@
+/* darktheme.css */
+.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-theme .bg-light {
+  background-color: #1f1f1f !important;
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h5,
+.dark-theme p {
+  color: #ffffff;
+}
+
+.dark-theme .card-body {
+  background-color: #333333 !important;
+  color: #ffffff;
+}
+
+.dark-theme .btn {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,13 @@
+.slider {
+  padding: 0px;
+}
+
+.Empty {
+  border: none;
+  width: 1200;
+  height: 50;
+}
+
+.booking {
+  color: red;
+}
