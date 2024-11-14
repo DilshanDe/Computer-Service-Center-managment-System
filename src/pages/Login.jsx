@@ -27,7 +27,7 @@ const Login = () => {
   return (
     <div className="container">
       <h2>Login</h2>
-      {error && <p className="text-danger">{error}</p>}
+      {error && <p className="text-primary">{error}</p>}
       <form onSubmit={handleLogin}>
         <div className="mb-3">
           <label htmlFor="email" className="form-label">Email address</label>
