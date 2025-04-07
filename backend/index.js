@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json({ limit: '300mb' }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/DemoDB', {
+mongoose.connect('mongodb://localhost:27017/Your databse Name', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
